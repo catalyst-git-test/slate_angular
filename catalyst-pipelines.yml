@@ -8,7 +8,7 @@ jobs:
       - echo "World"
   hello-world:
     steps:
-      - echo "Hello World!"
+      - echo << env.KEY >> 
 stages:
   - name: build
     jobs:
